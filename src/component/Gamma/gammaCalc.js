@@ -7,7 +7,7 @@ export let gMode = []
 unique.forEach((unique) => {
   let gArray = []
   data.forEach((item) => {
-    if (unique == item.Alcohol) {
+    if (unique === item.Alcohol) {
       let gamma = (item.Ash * item.Hue) / item.Magnesium
       gArray.push(gamma)
     }
@@ -17,7 +17,7 @@ unique.forEach((unique) => {
 //median calculation
   let sortedArray = gArray.sort((a, b) => a - b)
   const middleIndex = Math.floor(sortedArray.length / 2)
-  if (sortedArray.length % 2 == 0) {
+  if (sortedArray.length % 2 === 0) {
     gMedian.push(
       ((sortedArray[middleIndex - 1] + sortedArray[middleIndex]) / 2).toFixed(3)
     )

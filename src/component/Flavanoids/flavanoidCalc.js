@@ -10,7 +10,7 @@ unique.forEach((item) => {
   let sum = 0
   let value = []
   data.forEach((obj) => {
-    if (item == obj.Alcohol) {
+    if (item === obj.Alcohol) {
       value.push(Number(obj.Flavanoids))
       count++
       sum += Number(obj.Flavanoids)
@@ -19,7 +19,7 @@ unique.forEach((item) => {
 
   let sortedArray = value.sort((a, b) => a - b)
   const middleIndex = Math.floor(sortedArray.length / 2)
-  if (sortedArray.length % 2 == 0) {
+  if (sortedArray.length % 2 === 0) {
     median.push((sortedArray[middleIndex - 1] + sortedArray[middleIndex]) / 2)
   } else {
     median.push(sortedArray[middleIndex])
