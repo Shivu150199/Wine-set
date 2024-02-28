@@ -10,6 +10,7 @@ unique.forEach((item) => {
   let sum = 0
   let value = []
   data.forEach((obj) => {
+    //adding the flavonoid value in array
     if (item === obj.Alcohol) {
       value.push(Number(obj.Flavanoids))
       count++
@@ -17,6 +18,7 @@ unique.forEach((item) => {
     }
   })
 
+  //finding the midean of the Flavanoids
   let sortedArray = value.sort((a, b) => a - b)
   const middleIndex = Math.floor(sortedArray.length / 2)
   if (sortedArray.length % 2 === 0) {
@@ -25,9 +27,7 @@ unique.forEach((item) => {
     median.push(sortedArray[middleIndex])
   }
 
-  // mode.push(modes)
-  //   return modes.length === numbers.length ? [] : modes;
-
+  //finding the mode of flavanoids
   value = value.slice().sort((x, y) => x - y)
 
   var bestStreak = 1
@@ -50,7 +50,7 @@ unique.forEach((item) => {
   }
 
   currentStreak > bestStreak ? mode.push(currentElem) : mode.push(bestElem)
-
+  //calculating mean of flavanoids
   let means = (sum / count).toFixed(3)
   mean.push(means)
 })
