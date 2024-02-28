@@ -1,0 +1,12 @@
+Table,
+th,
+td {
+  font-family: 'Lato', sans-serif;
+  border-collapse: collapse;
+  padding: 3px;
+
+  text-align: center;
+}
+table {
+  margin-bottom: 1rem;
+}

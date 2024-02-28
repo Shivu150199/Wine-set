@@ -1,5 +1,5 @@
-import Flavonoids from "./component/Flavonoids";
-import Gamma from "./component/Gamma";
+import Flavonoids from "./component/Flavanoids/Flavonoids";
+import Gamma from "./component/Gamma/Gamma";
 
 
 
