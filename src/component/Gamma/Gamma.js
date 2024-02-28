@@ -7,11 +7,14 @@ const Gamma = () => {
       <table border="1" align="center" width="60%">
         <caption>Gamma Measure</caption>
         <thead>
+          <tr>
+
           <th>Measure</th>
           {/* mapping all classes */}
           {unique.map((item, index) => {
             return <th key={index}>class {item}</th>
           })}
+          </tr>
         </thead>
         <tbody>
           <tr>
