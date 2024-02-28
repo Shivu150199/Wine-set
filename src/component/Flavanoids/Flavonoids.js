@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react'
-import wineData from '../../data/data'
 import { unique } from '../unique'
 import { mean, median, mode } from './flavanoidCalc'
 
