@@ -66,3 +66,6 @@ bashCopy code
 This command will start the development server, and you should be able to access the application in your web browser at http://localhost:3000.
 
 Congratulations! You have successfully cloned the repository, opened it in your code editor, installed the dependencies, and run the application. 
+
+`screen shot of tables`
+![Screenshot of tables](image.png)
